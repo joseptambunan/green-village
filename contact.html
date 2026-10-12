@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Greensky Co-living Bali</title>
+<meta name="description" content="Send an early bird inquiry to Greensky Co-living via WhatsApp.">
+<link rel="stylesheet" href="./css/style.css">
+</head><body>
+<nav class="nav light">
+  <a href="./home.html" class="logo">Greensky<small>CO-LIVING</small></a>
+  <button class="burger" aria-label="Menu">☰</button>
+  <div class="links"><a href="./home.html">Home</a><a href="./villa.html">Villa</a><a href="./contact.html" class="active">Contact</a></div>
+</nav>
+
+<header class="hero small" style="background-image:linear-gradient(rgba(30,22,12,.4),rgba(30,22,12,.5)),url(./images/villa-room.jpg)">
+  <div><p class="eyebrow">Private Enquiries</p><h1>Get in Touch</h1><p>Early bird inquiries are now welcome.</p></div>
+</header>
+
+<section class="split" style="align-items:start">
+  <div class="info reveal">
+    <p class="eyebrow" style="color:var(--taupe)">Let's talk</p>
+    <h2>We'd love to hear from you</h2>
+    <p>Isi formulir dan pesan Anda akan langsung terkirim ke WhatsApp kami.</p>
+    <p><strong>WhatsApp</strong><br>+62 811 3811 6867</p>
+    <p><strong>Instagram</strong><br>@greenskyliving</p>
+    <p><strong>Locations</strong><br>Kerobokan • Sanur, Bali</p>
+  </div>
+  <form id="waForm" class="reveal" novalidate>
+    <div><label>Nama *<input name="nama" maxlength="80" required></label></div>
+    <div><label>Email<input name="email" type="email" maxlength="120"></label></div>
+    <div class="row">
+      <div><label>Lokasi<select name="lokasi"><option>Sanur</option><option>Kerobokan</option><option>Belum tahu</option></select></label></div>
+      <div><label>Durasi<select name="durasi"><option>1 bulan</option><option>3 bulan</option><option>6 bulan</option><option>12 bulan</option></select></label></div>
+    </div>
+    <div><label>Rencana masuk<input name="tanggal" type="date"></label></div>
+    <div><label>Pesan *<textarea name="pesan" rows="5" maxlength="1000" required></textarea></label></div>
+    <p class="err" id="err"></p>
+    <button class="btn fill" type="submit">Kirim via WhatsApp</button>
+  </form>
+</section>
+
+<footer><div class="logo">Greensky</div><p>Kerobokan • Sanur, Bali — +62 811 3811 6867</p><p>© 2026 Greensky Living</p></footer>
+<script src="./js/main.js"></script>
+</body></html>
